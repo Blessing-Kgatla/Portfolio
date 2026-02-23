@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    
+    
+
+    body {
+        margin:0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        display: flex;
+        padding: 0px 20px;
+        position: sticky;
+        align-items :center;
+        justify-content: space-between;
+        background-color: lavender;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+/* ===== MAIN ===== */    
+
+/* ===== FOOTER ===== */
+
+footer {
+    display: grid;
+    gap: 40px;
+    color: #e5e7eb;
+    background-color: #0f172a;
+    padding: 50px 50px 20px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+footer h2,footer h3 {
+    color: #ffffff;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.footer-brand p {
+    color: #94a3b8;
+
+}
+
+footer a {
+    color: #cbd5f5;
+    display: block;
+    transition: all 0.3s ease;
+    text-decoration: none; 
+    
+}
+
+footer a:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    color: #e5e7eb;
+    font-size: 15px ;
+    text-align: center;
+    grid-column: 1 / -1;
+    border-top: 1px solid #1e293b;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer a:hover {
+        transform: none;
+    }
+}
+
+    
+
+</style>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- LEFT LOGO -->
+        <h1>Portfolio</h1>
+
+        <!--  NAVIGATION BAR -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <!-- MAIN CONTENT-->
+    <main>
+
+        <section id="Home">
+            <h1>Welcome to my skeleton</h1>
+            <p>Designed to accelerate the development of the front-end of a website</p>
+        </section>
+
+        <section id="About">
+            <h1>Heres what I got</h1>
+
+        </section>
+
+        <section id="Skills">
+
+        </section>
+
+        <section id="Projects">
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+    <!-- BRAND -->
+    <section class="footer-brand">
+        <h2>LOGO</h2>
+        <p>Building ideas from skeleton to software.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: tloukgatla199@gmail.com</p>
+        <p>Phone: +27 64 835 1320</p>
+        <p>GitHub: <a href="https://github.com/Blessing-Kgatla">Blessing-Kgatla</a></p>
+        <p>Base: Johannesburg, South Africa</p>
+    </section>
+
+    <section class="footer-projects">
+        <h3>Web Development</h3>
+        <nav>
+            <a href="#">E-commerce</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Blog</a>
+        </nav>
+    </section>
+
+    <section class="footer-projects">
+        <h3>Data Analysis</h3>
+        <nav>
+            <a href="#">Weather</a>
+            <a href="#">Finance</a>
+            <a href="#">Reviews</a>
+            <a href="#">Economics</a>
+        </nav>
+    </section>
+
+    <section class="footer-projects">
+        <h3>Machine Learning</h3>
+        <nav>
+            <a href="#">Large Langauge Model</a>
+            <a href="#">Prediction</a>
+            <a href="#">Detection</a>
+        </nav>
+    </section>
+
+    <!-- COPYRIGHT -->
+    <section class="footer-bottom">
+        <p>&copy; 2026 Blessings — Skeleton to Software Design</p>
+    </section>
+
+</footer>
+    
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+    </script>
+
+</body>
+</html>
