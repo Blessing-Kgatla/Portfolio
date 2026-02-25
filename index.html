@@ -3,97 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="main.css">
 </head>
-
-
-<style>
-    
-    
-
-    body {
-        margin:0px;
-        padding: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header {
-        display: flex;
-        padding: 0px 20px;
-        position: sticky;
-        align-items :center;
-        justify-content: space-between;
-        background-color: lavender;
-    }
-
-    nav ul {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-    }
-/* ===== MAIN ===== */    
-
-/* ===== FOOTER ===== */
-
-footer {
-    display: grid;
-    gap: 40px;
-    color: #e5e7eb;
-    background-color: #0f172a;
-    padding: 50px 50px 20px 50px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-footer h2,footer h3 {
-    color: #ffffff;
-}
-
-.footer-brand h2 {
-    font-size: 28px;
-    letter-spacing: 2px;
-}
-
-.footer-brand p {
-    color: #94a3b8;
-
-}
-
-footer a {
-    color: #cbd5f5;
-    display: block;
-    transition: all 0.3s ease;
-    text-decoration: none; 
-    
-}
-
-footer a:hover {
-    color: #38bdf8;
-    transform: translateX(5px);
-}
-
-.footer-bottom {
-    color: #e5e7eb;
-    font-size: 15px ;
-    text-align: center;
-    grid-column: 1 / -1;
-    border-top: 1px solid #1e293b;
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 768px) {
-    footer {
-        text-align: center;
-    }
-
-    footer a:hover {
-        transform: none;
-    }
-}
-
-    
-
-</style>
 
 <body>
 
@@ -123,8 +37,24 @@ footer a:hover {
         </section>
 
         <section id="About">
-            <h1>Heres what I got</h1>
 
+            <h1 id ="About-Title">Get To Know Me</h1>
+            <section id="About-Content">
+                <figure id ="About-Image">
+                    <img src="https://avatars.githubusercontent.com/u/122803441?v=4" alt="Profile picture">
+                </figure>
+           
+                <article id="About-details">
+                    <p>Name : Blessing Kgatla </p>
+                    <p>Age : 22 </p>
+                    <p>Language : English, Setswana</p>
+                    <p>Bio: I am a passionate web developer and data analyst with a strong interest in creating efficient and user-friendly applications. My journey in tech began with a curiosity about how things work, leading me to pursue a BSc in Computer Science.</p>
+                    <p>Interests: Web Development, Data Analysis, Machine Learning</p>
+                    <p>Hobbies: Reading, Playing Guitar, Hiking</p>
+                    <a href = "Blessing_Kgatla_Resume.pdf" download="Blessing_Kgatla_Resume.pdf">Download CV</a>
+                </article>
+            </section>
+            
         </section>
 
         <section id="Skills">
@@ -158,30 +88,30 @@ footer a:hover {
 
     <section class="footer-projects">
         <h3>Web Development</h3>
-        <nav>
+        <section>
             <a href="#">E-commerce</a>
             <a href="#">Restaurant</a>
             <a href="#">Blog</a>
-        </nav>
+        </section>
     </section>
 
     <section class="footer-projects">
         <h3>Data Analysis</h3>
-        <nav>
+        <section>
             <a href="#">Weather</a>
             <a href="#">Finance</a>
             <a href="#">Reviews</a>
             <a href="#">Economics</a>
-        </nav>
+        </section>
     </section>
 
     <section class="footer-projects">
         <h3>Machine Learning</h3>
-        <nav>
+        <section>
             <a href="#">Large Langauge Model</a>
             <a href="#">Prediction</a>
             <a href="#">Detection</a>
-        </nav>
+        </section>
     </section>
 
     <!-- COPYRIGHT -->
@@ -189,13 +119,10 @@ footer a:hover {
         <p>&copy; 2026 Blessings — Skeleton to Software Design</p>
     </section>
 
-</footer>
+    </footer>
     
-
-    <!-- JAVASCRIPT -->
-    <script>
-
-    </script>
+<!--  LINK TO JAVASCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
