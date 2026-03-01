@@ -16,8 +16,8 @@
     <!-- HEADER -->
     <header>
         <!-- LEFT LOGO -->
-        <section id="logo">
-            <img src="img/sparkles.png" class="logo" >
+        <section id="Header-Logo">
+            <img src="img/sparkles.png" id="Logo" >
             <h1>Portfolio</h1>
         </section>
 
@@ -30,27 +30,20 @@
                 <li><a href="#">Projects</a></li>
             </ul>
         </nav>
-
     </header>
     
     <!-- MAIN CONTENT-->
     <main>
 
         <section id="Home">
-<<<<<<< HEAD
-            <h1>Hey,I'm <br><article class="highlight">Blessing</article> </h1>
-            <p>A passionate computer science student <br>
+            <section class="Home-content">
+                <h1>Hey,I'm <br><article class="highlight">Blessing</article> </h1>
+                <p>A passionate computer science student <br>
                 with a love for web development, data analysis, and machine learning. <br>
                 I enjoy creating efficient and user-friendly applications that solve real-world problems.
-            </p>
-            <button onclick="window.location.href='#About'">Learn More</button> 
-=======
-            <h1>Hey,I'm <br> Blessing Kgatla</h1>
-            <p>Full Stack Developer </p>
-
-
-            <button onclick="window.location.href='#About'">Learn more</button> 
->>>>>>> 4390b24970329cd5953c6a3665e72fad11f9c2e0
+                </p>
+                <button onclick="window.location.href='#About'">Learn More</button>
+            </section>
         </section>
 
         <section id="About">
@@ -122,25 +115,7 @@
                     <h3 class="skill-name">VS Code</h3>
                 </li>
 
-                <li class="skill-card" data-skill="Docker" data-level="Beginner">
-                    <i class="fab fa-docker skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">Docker</h3>
-                </li>
 
-                <li class="skill-card" data-skill="MongoDB" data-level="Intermediate">
-                    <i class="fas fa-database skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">MongoDB</h3>
-                </li>
-
-                <li class="skill-card" data-skill="AWS" data-level="Beginner">
-                    <i class="fab fa-aws skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">AWS</h3>
-                </li>
-
-                <li class="skill-card" data-skill="Figma" data-level="Intermediate">
-                    <i class="fab fa-figma skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">Figma</h3>
-                </li>
             </ul>
             </article>
             
@@ -152,20 +127,39 @@
 
         </section>
 
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <p>Let's get in touch. Send me a message:</p>
+
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+
+                <button type="submit">
+                    <i class="fa fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </section>
+
+
     </main>
 
 
+
     <!-- FOOTER -->
+
     <footer>
 
     <!-- BRAND -->
-    <section id="footer-brand">
-        <h2>LOGO</h2>
+    <section id="Footer-Brand">
+        <img src="img/sparkles.png" id="Footer-Logo" >
         <p>Building ideas from skeleton to software.</p>
     </section>
 
     <!-- CONTACT -->
-    <section id="footer-contact">
+    <section id="Footer-Contact">
         <h3>Contact</h3>
         <p>Email: tloukgatla199@gmail.com</p>
         <p>Phone: +27 64 835 1320</p>
@@ -173,7 +167,7 @@
         <p>Base: Johannesburg, South Africa</p>
     </section>
 
-    <section class="footer-projects">
+    <section class="Footer-Projects">
         <h3>Web Development</h3>
         <section>
             <a href="#">E-commerce</a>
@@ -182,7 +176,7 @@
         </section>
     </section>
 
-    <section class="footer-projects">
+    <section class="Footer-Projects">
         <h3>Data Analysis</h3>
         <section>
             <a href="#">Weather</a>
@@ -192,7 +186,7 @@
         </section>
     </section>
 
-    <section class="footer-projects">
+    <section class="Footer-Projects">
         <h3>Machine Learning</h3>
         <section>
             <a href="#">Large Langauge Model</a>
@@ -202,7 +196,7 @@
     </section>
 
     <!-- COPYRIGHT -->
-    <section id="footer-bottom">
+    <section id="Footer-Bottom">
         <p>&copy; 2026 Blessings — Skeleton to Software Design</p>
     </section>
 

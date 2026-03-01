@@ -20,12 +20,17 @@
         background-color: #0f172a;
     }
 
-    #logo {
+    #Header-Logo {
         width: 50px;
         height: 50px;
         display: flex;
         align-items: center;
+    }
 
+    #Logo {
+        width: 35px;
+        height: 35px;
+        padding-right: 10px;
     }
 
     header h1{
@@ -74,7 +79,7 @@
         background-color: #0f172a;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
-        padding: 25px 0px 50px 0px;
+        padding: 15px 0px 50px 0px;
         
     }
 
@@ -82,7 +87,7 @@
         color: white;
         font-size: 80px;
         text-align: left;
-        padding-left: 50px;
+        padding-left: 50px;;
     }
 
     #Home p {
@@ -90,6 +95,7 @@
         font-size: 20px;
         text-align: left;
         padding-left: 50px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     #Home button {
@@ -346,10 +352,52 @@
     }
 
 
+/*===== CONTACT ===== */
+    #Contact {
+        padding: 60px 50px;
+        background-color: #0f172a;
+        color: #e5e7eb;
+    }
+
+    #Contact h2 {
+        margin-bottom: 10px;
+    }
+
+    #Contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 500px;
+    }
+
+    #Contact input,
+    #Contact textarea {
+        padding: 14px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+}
+
+    #Contact button {
+        background-color: #38bdf8;
+        color: white;
+        border: none;
+        padding: 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    #Contact button:hover {
+        background-color: #0ea5e9;
+    }
+
+
 /* ===== FOOTER ===== */
 
-<<<<<<< HEAD
-footer {
+Footer {
     display: grid;
     gap: 40px;
     color: #e5e7eb;
@@ -358,21 +406,34 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-footer h2,footer h3 {
+#Footer-Brand {
+    width: 50px;
+    height: 50px;
+    display: grid ;
+    align-items: center;
+}
+
+#Footer-Logo {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+}
+
+Footer h2,footer h3 {
     color: #ffffff;
 }
 
-#footer-brand h2 {
+#Footer-Brand h2 {
     font-size: 28px;
     letter-spacing: 2px;
 }
 
-#footer-brand p {
+#Footer-Brand p {
     color: #94a3b8;
 
 }
 
-footer a {
+Footer a {
     color: #cbd5f5;
     display: block;
     transition: all 0.3s ease;
@@ -380,12 +441,12 @@ footer a {
     
 }
 
-footer a:hover {
+Footer a:hover {
     color: #38bdf8;
     transform: translateX(5px);
 }
 
-#footer-bottom {
+#Footer-Bottom {
     color: #e5e7eb;
     font-size: 15px ;
     text-align: center;
@@ -393,11 +454,10 @@ footer a:hover {
     border-top: 1px solid #1e293b;
 }
 
+
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 768px) {
-=======
->>>>>>> 4390b24970329cd5953c6a3665e72fad11f9c2e0
     footer {
         display: grid;
         gap: 40px;
@@ -407,21 +467,22 @@ footer a:hover {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    footer h2,footer h3 {
+    Footer h2,footer h3 {
         color: #ffffff;
     }
 
-    .footer-brand h2 {
+    .Footer-Brand h2 {
         font-size: 28px;
         letter-spacing: 2px;
     }
 
-    .footer-brand p {
+    .Footer-Brand p {
         color: #94a3b8;
 
     }
 
-    footer a {
+
+    Footer a {
         color: #cbd5f5;
         display: block;
         transition: all 0.3s ease;
@@ -429,12 +490,12 @@ footer a:hover {
         
     }
 
-    footer a:hover {
+    Footer a:hover {
         color: #38bdf8;
         transform: translateX(5px);
     }
 
-    .footer-bottom {
+    .Footer-Bottom {
         color: #e5e7eb;
         font-size: 15px ;
         text-align: center;
@@ -442,16 +503,4 @@ footer a:hover {
         border-top: 1px solid #1e293b;
     }
 
-    /* ===== RESPONSIVE ===== */
-
-    @media (max-width: 768px) {
-        footer {
-            text-align: center;
-        }
-
-        footer a:hover {
-            transform: none;
-        }
-    }
-
-    
+}
