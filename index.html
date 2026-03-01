@@ -7,10 +7,12 @@
 
     <!-- LINK TO CSS -->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
-
+   
     <!-- HEADER -->
     <header>
         <!-- LEFT LOGO -->
@@ -19,8 +21,8 @@
         <!--  NAVIGATION BAR -->
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
             </ul>
@@ -32,9 +34,11 @@
     <main>
 
         <section id="Home">
-            <h1>Hey,I'm <br> Blessing</h1>
-            <p>Well Rounded Developer</p>
-            <button onclick="window.location.href='#About'">Learn More</button> 
+            <h1>Hey,I'm <br> Blessing Kgatla</h1>
+            <p>Full Stack Developer </p>
+
+
+            <button onclick="window.location.href='#About'">Learn more</button> 
         </section>
 
         <section id="About">
@@ -59,6 +63,76 @@
         </section>
 
         <section id="Skills">
+            <article id="Skills-Section">
+                
+                <h2 id="Skills-Header">My Tech Stack</h2>
+                <p id="Skills-Subtitle"> Technologies I work with</p>
+            
+        
+            <ul id="Skills-Grid">
+                <li class="skill-card" data-skill="HTML5" data-level="Advanced">
+                    <i class="fab fa-html5 skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">HTML5</h3>
+                </li>
+
+                <li class="skill-card" data-skill="CSS3" data-level="Advanced">
+                    <i class="fab fa-css3-alt skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">CSS3</h3>
+                </li>
+
+                <li class="skill-card" data-skill="JavaScript" data-level="Advanced">
+                    <i class="fab fa-js skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">JavaScript</h3>
+                </li>
+
+                <li class="skill-card" data-skill="React" data-level="Intermediate">
+                    <i class="fab fa-react skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">React</h3>
+                </li>
+
+                <li class="skill-card" data-skill="Node.js" data-level="Intermediate">
+                    <i class="devicon-nodejs-plain skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">Node.js</h3>
+                </li>
+
+                <li class="skill-card" data-skill="Python" data-level="Advanced">
+                    <i class="fab fa-python skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">Python</h3>
+                </li>
+
+                <li class="skill-card" data-skill="Git" data-level="Advanced">
+                    <i class="fab fa-git-alt skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">Git</h3>
+                </li>
+
+                <li class="skill-card" data-skill="VS Code" data-level="Advanced">
+                    <i class="fas fa-code skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">VS Code</h3>
+                </li>
+
+                <li class="skill-card" data-skill="Docker" data-level="Beginner">
+                    <i class="fab fa-docker skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">Docker</h3>
+                </li>
+
+                <li class="skill-card" data-skill="MongoDB" data-level="Intermediate">
+                    <i class="fas fa-database skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">MongoDB</h3>
+                </li>
+
+                <li class="skill-card" data-skill="AWS" data-level="Beginner">
+                    <i class="fab fa-aws skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">AWS</h3>
+                </li>
+
+                <li class="skill-card" data-skill="Figma" data-level="Intermediate">
+                    <i class="fab fa-figma skill-icon" aria-hidden="true"></i>
+                    <h3 class="skill-name">Figma</h3>
+                </li>
+            </ul>
+            </article>
+            
+            
 
         </section>
 
