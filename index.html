@@ -36,14 +36,22 @@
     <main>
 
         <section id="Home">
-            <section class="Home-content">
-                <h1>Hey,I'm <br><article class="highlight">Blessing</article> </h1>
-                <p>A passionate computer science student <br>
-                with a love for web development, data analysis, and machine learning. <br>
-                I enjoy creating efficient and user-friendly applications that solve real-world problems.
-                </p>
+            <section id="Home-Content">
+                <section id="Home-Intro">
+                    <h1>Hey,I'm <br><article class="highlight">Blessing</article> </h1>
+                    <p>A passionate computer science student <br>
+                    with a love for web development, data analysis, and machine learning. <br>
+                    I enjoy creating efficient and user-friendly applications that solve real-world problems.
+                    </p>
                 <button onclick="window.location.href='#About'">Learn More</button>
-            </section>
+                </section>
+
+                <section id="Home-Image">
+                    <figure>
+                        <img src="img/giphy.gif">
+                    </figure>
+                </section> 
+            </section>   
         </section>
 
         <section id="About">
@@ -95,52 +103,47 @@
                     <h3 class="skill-name">React</h3>
                 </li>
 
-                <li class="skill-card" data-skill="Node.js" data-level="Intermediate">
-                    <i class="devicon-nodejs-plain skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">Node.js</h3>
-                </li>
-
-                <li class="skill-card" data-skill="Python" data-level="Advanced">
-                    <i class="fab fa-python skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">Python</h3>
-                </li>
-
-                <li class="skill-card" data-skill="Git" data-level="Advanced">
-                    <i class="fab fa-git-alt skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">Git</h3>
-                </li>
-
-                <li class="skill-card" data-skill="VS Code" data-level="Advanced">
-                    <i class="fas fa-code skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">VS Code</h3>
-                </li>
-
 
             </ul>
             </article>
-            
-            
 
         </section>
+
+
+
+        <!-- PROJECTS -->
 
         <section id="Projects">
 
         </section>
 
+
+
+
+        <!-- CONTACT -->
+
         <section id="Contact">
-            <h2>Contact Me</h2>
-            <p>Let's get in touch. Send me a message:</p>
 
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Message" rows="5" required></textarea>
+            </section id="Contact-Content">
 
-                <button type="submit">
-                    <i class="fa fa-paper-plane"></i> Send Message
-                </button>
-            </form>
+                <section id="Contact-Info">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+                </section>
+                
+                <section id="Contact-Form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Message" rows="5" required></textarea>
+
+                        <button type="submit">
+                            <i class="fa fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </section>
+
         </section>
 
 
@@ -152,53 +155,53 @@
 
     <footer>
 
-    <!-- BRAND -->
-    <section id="Footer-Brand">
-        <img src="img/sparkles.png" id="Footer-Logo" >
-        <p>Building ideas from skeleton to software.</p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="Footer-Contact">
-        <h3>Contact</h3>
-        <p>Email: tloukgatla199@gmail.com</p>
-        <p>Phone: +27 64 835 1320</p>
-        <p>GitHub: <a href="https://github.com/Blessing-Kgatla">Blessing-Kgatla</a></p>
-        <p>Base: Johannesburg, South Africa</p>
-    </section>
-
-    <section class="Footer-Projects">
-        <h3>Web Development</h3>
-        <section>
-            <a href="#">E-commerce</a>
-            <a href="#">Restaurant</a>
-            <a href="#">Blog</a>
+        <!-- BRAND -->
+        <section id="Footer-Brand">
+            <img src="img/sparkles.png" id="Footer-Logo" >
+            <p>Building ideas from skeleton to software.</p>
         </section>
-    </section>
 
-    <section class="Footer-Projects">
-        <h3>Data Analysis</h3>
-        <section>
-            <a href="#">Weather</a>
-            <a href="#">Finance</a>
-            <a href="#">Reviews</a>
-            <a href="#">Economics</a>
+        <!-- CONTACT -->
+        <section id="Footer-Contact">
+            <h3>Contact</h3>
+            <p>Email: tloukgatla199@gmail.com</p>
+            <p>Phone: +27 64 835 1320</p>
+            <p>GitHub: <a href="https://github.com/Blessing-Kgatla">Blessing-Kgatla</a></p>
+            <p>Base: Johannesburg, South Africa</p>
         </section>
-    </section>
 
-    <section class="Footer-Projects">
-        <h3>Machine Learning</h3>
-        <section>
-            <a href="#">Large Langauge Model</a>
-            <a href="#">Prediction</a>
-            <a href="#">Detection</a>
+        <section class="Footer-Projects">
+            <h3>Web Development</h3>
+            <section>
+                <a href="#">E-commerce</a>
+                <a href="#">Restaurant</a>
+                <a href="#">Blog</a>
+            </section>
         </section>
-    </section>
 
-    <!-- COPYRIGHT -->
-    <section id="Footer-Bottom">
-        <p>&copy; 2026 Blessings — Skeleton to Software Design</p>
-    </section>
+        <section class="Footer-Projects">
+            <h3>Data Analysis</h3>
+            <section>
+                <a href="#">Weather</a>
+                <a href="#">Finance</a>
+                <a href="#">Reviews</a>
+                <a href="#">Economics</a>
+            </section>
+        </section>
+
+        <section class="Footer-Projects">
+            <h3>Machine Learning</h3>
+            <section>
+                <a href="#">Large Langauge Model</a>
+                <a href="#">Prediction</a>
+                <a href="#">Detection</a>
+            </section>
+        </section>
+
+        <!-- COPYRIGHT -->
+        <section id="Footer-Bottom">
+            <p>&copy; 2026 Blessings — Skeleton to Software Design</p>
+        </section>
 
     </footer>
     
