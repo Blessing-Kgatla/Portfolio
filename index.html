@@ -35,6 +35,8 @@
     <!-- MAIN CONTENT-->
     <main>
 
+        <!-- HOME -->
+
         <section id="Home">
             <section id="Home-Content">
                 <section id="Home-Intro">
@@ -54,26 +56,34 @@
             </section>   
         </section>
 
+        <!-- ABOUT -->
+
         <section id="About">
 
-            <h1 id ="About-Title">Get To Know Me</h1>
             <section id="About-Content">
-                <figure id ="About-Image">
-                    <img src="img/profile1.svg" alt="Profile picture">
-                </figure>
-           
-                <article id="About-details">
+
+                <section id="About-Intro">
+                    <h2>About Me</h2>
+                    <p>I'm Blessing — a web developer and data analyst who genuinely loves building things that work beautifully.<br>
+                        My curiosity about how technology shapes the world led me to pursue a BSc in Computer Science, and honestly, I haven't looked back since.<br>
+                        Whether I'm crafting clean, intuitive interfaces or digging into data to uncover meaningful insights, I bring the same energy to everything I do.<br>
+                        When I'm not coding, you'll probably find me lost in a good book, strumming my guitar, or out on a hiking trail somewhere.</p>
+                </section>
+
+                <section id="About-Info">
                     <p><strong>Name:</strong> Blessing Kgatla</p>
                     <p><strong>Age:</strong> 22</p>
                     <p><strong>Language:</strong> English, Setswana</p>
-                    <p><strong>Bio:</strong> I am a passionate web developer and data analyst with a strong interest in creating efficient and user-friendly applications. My journey in tech began with a curiosity about how things work, leading me to pursue a BSc in Computer Science.</p>
                     <p><strong>Interests:</strong> Web Development, Data Analysis, Machine Learning</p>
                     <p><strong>Hobbies:</strong> Reading, Playing Guitar, Hiking</p>
                     <a href = "Blessing_Kgatla_Resume.pdf" download="Blessing_Kgatla_Resume.pdf">Download CV</a>
-                </article>
+                </section>
+           
             </section>
             
         </section>
+
+        <!-- SKILLS -->
 
         <section id="Skills">
             <article id="Skills-Section">
@@ -115,6 +125,42 @@
 
         <section id="Projects">
 
+            <section id="Projects-Title">
+                <h2>My Projects</h2>
+                <p>A selection of my recent work</p>   
+            </section>
+
+            <section id="Projects-Container">
+
+                <button class="slider-btn prev">&#10094;</button>
+
+                <section id="Projects-Lineup">
+                    <article class="Projects-Card">
+                        <img src="img/project1.png" alt="Project 1">
+                        <h3>Weather App</h3>
+                        <p>A web application that provides real-time weather information for any location using the OpenWeatherMap API.</p>
+                        <a href="#">View Project</a>
+                    </article>
+
+                    <article class="Projects-Card">
+                        <img src="img/project2.png" alt="Project 2">
+                        <h3>Personal Blog</h3>
+                        <p>A responsive blog website built with React and Node.js, allowing users to create and share their thoughts on various topics.</p>
+                        <a href="#">View Project</a>
+                    </article>
+
+                    <article class="Projects-Card">
+                        <img src="img/project3.png" alt="Project 3">
+                        <h3>Data Analysis Dashboard</h3>
+                        <p>A dashboard that visualizes sales data using D3.js, providing insights into trends and performance metrics.</p>
+                        <a href="#">View Project</a>
+                    </article>
+                </section>
+
+                <button class="slider-btn next">&#10095;</button>
+
+            </section>    
+
         </section>
 
 
@@ -124,13 +170,20 @@
 
         <section id="Contact">
 
-            </section id="Contact-Content">
+            <section id="Contact-Title">
+                    <h2>Contact <article class="highlight">Me</article></h2>
+            </section>
 
+            <section id="Contact-Content">
                 <section id="Contact-Info">
-                    <h2>Contact Me</h2>
                     <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+                    <p>Email: tloukgatla199@gmail.com</p>
+                    <p>Phone: +27 64 835 1320</p>
+                    <p>GitHub: <a href="https://github.com/Blessing-Kgatla">Blessing-Kgatla</a></p>
+                    <p>Base: Johannesburg, South Africa</p>
+
                 </section>
-                
+
                 <section id="Contact-Form">
                     <form>
                         <input type="text" placeholder="Your Name" required>
@@ -143,11 +196,14 @@
                         </button>
                     </form>
                 </section>
+            </section>
 
         </section>
 
 
-    </main>
+
+
+</main>
 
 
 
@@ -159,15 +215,6 @@
         <section id="Footer-Brand">
             <img src="img/sparkles.png" id="Footer-Logo" >
             <p>Building ideas from skeleton to software.</p>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="Footer-Contact">
-            <h3>Contact</h3>
-            <p>Email: tloukgatla199@gmail.com</p>
-            <p>Phone: +27 64 835 1320</p>
-            <p>GitHub: <a href="https://github.com/Blessing-Kgatla">Blessing-Kgatla</a></p>
-            <p>Base: Johannesburg, South Africa</p>
         </section>
 
         <section class="Footer-Projects">
