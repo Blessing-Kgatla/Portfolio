@@ -26,8 +26,8 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +45,10 @@
                     with a love for web development, data analysis, and machine learning. <br>
                     I enjoy creating efficient and user-friendly applications that solve real-world problems.
                     </p>
-                <button onclick="window.location.href='#About'">Learn More</button>
+                    <section id="Home-Buttons">
+                        <button id="Learn"onclick="window.location.href='#Projects'">Learn More</button>
+                        <button id="Reach"onclick="window.location.href='#Contact'">Contact Me</button>
+                    </section>
                 </section>
 
                 <section id="Home-Image">
@@ -60,10 +63,13 @@
 
         <section id="About">
 
+            <section id="About-Title">
+                <h2>About Me</h2>
+            </section>
+
             <section id="About-Content">
 
                 <section id="About-Intro">
-                    <h2>About Me</h2>
                     <p>I'm Blessing — a web developer and data analyst who genuinely loves building things that work beautifully.<br>
                         My curiosity about how technology shapes the world led me to pursue a BSc in Computer Science, and honestly, I haven't looked back since.<br>
                         Whether I'm crafting clean, intuitive interfaces or digging into data to uncover meaningful insights, I bring the same energy to everything I do.<br>
@@ -71,12 +77,32 @@
                 </section>
 
                 <section id="About-Info">
-                    <p><strong>Name:</strong> Blessing Kgatla</p>
-                    <p><strong>Age:</strong> 22</p>
-                    <p><strong>Language:</strong> English, Setswana</p>
-                    <p><strong>Interests:</strong> Web Development, Data Analysis, Machine Learning</p>
-                    <p><strong>Hobbies:</strong> Reading, Playing Guitar, Hiking</p>
-                    <a href = "Blessing_Kgatla_Resume.pdf" download="Blessing_Kgatla_Resume.pdf">Download CV</a>
+                    <section class="Info-Row">
+                        <article class="Info-Label">NAME</article>
+                        <article class="Info-Value">Blessing Kgatla</article>
+                    </section>
+
+                    <section class="Info-Row">
+                        <article class="Info-Label">AGE</article>
+                        <article class="Info-Value">21</article>
+                    </section>
+
+                    <section class="Info-Row">
+                        <article class="Info-Label">LANGUAGES</article>
+                        <article class="Info-Value">Sepedi · English</article>
+                    </section>
+
+                    <section class="Info-Row">
+                        <article class="Info-Label">INTERESTS</article>
+                        <article class="Info-Value">Data Analysis · Machine Learning · Software Development</article>
+                    </section>
+
+                    <section class="Info-Row">
+                        <article class="Info-Label">HOBBIES</article>
+                        <article class="Info-Value">Watching series and movies · Playing Call Of Duty · Coding </article>
+                    </section>
+
+                    <a href="Blessing_Kgatla_Resume.pdf" download="Blessing_Kgatla_Resume.pdf" id="CV-Button">Download CV</a>
                 </section>
            
             </section>
@@ -86,36 +112,9 @@
         <!-- SKILLS -->
 
         <section id="Skills">
-            <article id="Skills-Section">
-                
-                <h2 id="Skills-Header">My Tech Stack</h2>
-                <p id="Skills-Subtitle"> Technologies I work with</p>
-            
-        
-            <ul id="Skills-Grid">
-                <li class="skill-card" data-skill="HTML5" data-level="Advanced">
-                    <i class="fab fa-html5 skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">HTML5</h3>
-                </li>
-
-                <li class="skill-card" data-skill="CSS3" data-level="Advanced">
-                    <i class="fab fa-css3-alt skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">CSS3</h3>
-                </li>
-
-                <li class="skill-card" data-skill="JavaScript" data-level="Advanced">
-                    <i class="fab fa-js skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">JavaScript</h3>
-                </li>
-
-                <li class="skill-card" data-skill="React" data-level="Intermediate">
-                    <i class="fab fa-react skill-icon" aria-hidden="true"></i>
-                    <h3 class="skill-name">React</h3>
-                </li>
-
-
-            </ul>
-            </article>
+            <section id="Skills-Title">
+                <h2></h2>
+            </section>
 
         </section>
 
@@ -171,7 +170,7 @@
         <section id="Contact">
 
             <section id="Contact-Title">
-                    <h2>Contact me</h2>
+                    <h2>Contact Me</h2>
             </section>
 
             <section id="Contact-Content">
@@ -181,9 +180,9 @@
                     <br>
                     <p><i class="fa-solid fa-map-pin"></i> Johannesburg, South Africa</p>
                     <ul>
-                        <li><a href="tel:+27648351320"><i class="fa-solid fa-phone" style="color: rgb(15, 23, 42);"></i></a></li>
-                        <li><a href="mailto:tloukgatla199@gmail.com"><i class="fa-regular fa-envelope" style="color: rgb(15, 23, 42);"></i></i></a> </li>
-                        <li><a href="https://github.com/Blessing-Kgatla"><i class="fa-brands fa-github fa-bounce" style="color: hsl(222, 47%, 11%);"></i></a></li>  
+                        <li><a href="tel:+27648351320"><i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i></a></li>
+                        <li><a href="mailto:tloukgatla199@gmail.com"><i class="fa-regular fa-envelope" style="color: rgb(255, 255, 255);"></i></i></a> </li>
+                        <li><a href="https://github.com/Blessing-Kgatla"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i></a></li>  
                     </ul>
                 </section>
 
