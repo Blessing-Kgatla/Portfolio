@@ -7,9 +7,10 @@
 
     <!-- LINK TO CSS -->
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" hret="./features/slider.css"
+    <link rel="stylesheet" href="./features/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <header>
         <!-- LEFT LOGO -->
         <section id="Header-Logo">
-            <img src="img/sparkles.png" id="Logo" >
+            <img src="img/sparkles.png" id="Logo">
             <h1>Portfolio</h1>
         </section>
 
@@ -47,7 +48,6 @@
                         <button id="Learn" onclick="window.location.href='#Projects'">Learn More</button>
                         <button id="Reach" onclick="window.location.href='#Contact'">Contact Me</button>
                     </section>
-
                 </section>
                 <section id="Home-Image">
                     <figure>
@@ -58,19 +58,16 @@
         </section>
 
         <!-- ABOUT -->
-
         <section id="About">
-
             <section id="About-Title">
                 <h2>About Me</h2>
             </section>
 
             <section id="About-Content">
-
                 <section id="About-Intro">
-                    <p>I'm Blessing — a web developer and data analyst who genuinely loves building things that work beautifully.<br>
-                        My curiosity about how technology shapes the world led me to pursue a BSc in Computer Science, and honestly, I haven't looked back since.<br>
-                        Whether I'm crafting clean, intuitive interfaces or digging into data to uncover meaningful insights, I bring the same energy to everything I do.<br>
+                    <p>I'm Blessing — a web developer and data analyst who genuinely loves building things that work beautifully.<br><br>
+                        My curiosity about how technology shapes the world led me to pursue a BSc in Computer Science, and honestly, I haven't looked back since.<br><br>
+                        Whether I'm crafting clean, intuitive interfaces or digging into data to uncover meaningful insights, I bring the same energy to everything I do.<br><br>
                         When I'm not coding, you'll probably find me lost in a good book, strumming my guitar, or out on a hiking trail somewhere.</p>
                 </section>
 
@@ -79,106 +76,96 @@
                         <article class="Info-Label">NAME</article>
                         <article class="Info-Value">Blessing Kgatla</article>
                     </section>
-
                     <section class="Info-Row">
                         <article class="Info-Label">AGE</article>
                         <article class="Info-Value">21</article>
                     </section>
-
                     <section class="Info-Row">
                         <article class="Info-Label">LANGUAGES</article>
                         <article class="Info-Value">Sepedi · English</article>
                     </section>
-
                     <section class="Info-Row">
                         <article class="Info-Label">INTERESTS</article>
                         <article class="Info-Value">Data Analysis · Machine Learning · Software Development</article>
                     </section>
-
                     <section class="Info-Row">
                         <article class="Info-Label">HOBBIES</article>
-                        <article class="Info-Value">Watching series and movies · Playing Call Of Duty · Coding </article>
+                        <article class="Info-Value">Watching series and movies · Playing Call Of Duty · Coding</article>
                     </section>
-
                     <a href="Blessing_Kgatla_Resume.pdf" download="Blessing_Kgatla_Resume.pdf" id="CV-Button">Download CV</a>
                 </section>
-           
             </section>
-            
         </section>
 
         <!-- SKILLS -->
+        <section id="Skills">
+            <h2 id="Skills-Title">My Skills</h2>
+            <section class="Skills-Container">
 
-      <section class="Skills">
-        <h1 id="Skills-Title">My Skills</h1>
-        <section class="Skills-Container">
-            <section class="FrontEnd">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
+                <section class="Skill-Card">
+                    <h3 class="Skill-Category"><i class="fas fa-code"></i> Frontend</h3>
+                    <ul>
+                        <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+                        <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+                        <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                        <li><i class="devicon-react-original colored"></i> React</li>
+                    </ul>
+                </section>
+
+                <section class="Skill-Card">
+                    <h3 class="Skill-Category"><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li><i class="devicon-python-plain colored"></i> Python</li>
+                        <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+                        <li><i class="devicon-cplusplus-plain colored"></i> C / C++</li>
+                        <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                    </ul>
+                </section>
+
+                <section class="Skill-Card">
+                    <h3 class="Skill-Category"><i class="fas fa-brain"></i> Data & ML</h3>
+                    <ul>
+                        <li><i class="devicon-pandas-plain colored"></i> Pandas</li>
+                        <li><i class="devicon-numpy-plain colored"></i> NumPy</li>
+                        <li><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</li>
+                        <li><i class="fas fa-chart-bar" style="color:#38bdf8"></i> D3.js</li>
+                    </ul>
+                </section>
+
+                <section class="Skill-Card">
+                    <h3 class="Skill-Category"><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                    <ul>
+                        <li><i class="devicon-git-plain colored"></i> Git & GitHub</li>
+                        <li><i class="devicon-docker-plain colored"></i> Docker</li>
+                        <li><i class="fab fa-aws" style="color:#ff9900"></i> AWS</li>
+                        <li><i class="devicon-linux-plain"></i> Linux</li>
+                    </ul>
+                </section>
 
             </section>
-
-            <section class="Backend">
-                <ul>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
-            </section>
-
-
-            <section class="DevOps">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
-            </section>
-
-            <section class="TechStack">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
-                
-            </section>
-
         </section>
 
-      </section>
-
-
-
         <!-- PROJECTS -->
-
         <section id="Projects">
-
             <section id="Projects-Title">
-                <h2>Selected Projects</h2>
+                <h2>Projects</h2>
             </section>
 
             <section id="Slide-Wrapper">
-
                 <ol id="Slide-Track">
 
                     <!--Slide 1-->
                     <li class="Slide active">
                         <figure class="Slide-Image">
                             <figcaption class="slide-number-badge">01 / 03</figcaption>
-                             <figure class="img-placeholder">&#9635;</figure>
+                            <figure class="img-placeholder">&#9635;</figure>
                         </figure>
-
                         <article class="Slide-Content">
                             <mark class="project-tag">Web App</mark>
                             <h3 class="project-title">Project One</h3>
                             <p class="project-description">A full-stack platform that lets users manage their workflow visually. Built with performance and accessibility in mind, it reduced task completion time by 40% in user testing. Features real-time collaboration and offline support.</p>
                             <a href="#" class="project-link">View project <i class="fas fa-arrow-right"></i></a>
                         </article>
-
                         <footer class="Slide-Footer">
                             <p class="Slide-Stack">Stack</p>
                             <ul class="Slide-Chips">
@@ -194,16 +181,14 @@
                     <li class="Slide">
                         <figure class="Slide-Image">
                             <figcaption class="slide-number-badge">02 / 03</figcaption>
-                             <figure class="img-placeholder">&#9635;</figure>
+                            <figure class="img-placeholder">&#9635;</figure>
                         </figure>
-
                         <article class="Slide-Content">
                             <mark class="project-tag">API & Backend</mark>
                             <h3 class="project-title">Project Two</h3>
-                            <p class="project-description">Designed and built a RESTful API serving over 50,000 requests per day.Includes JWT authentication, rate limiting, and auto-generated Swagger docs. Deployed on AWS with zero-downtime blue-green deployments.</p>
+                            <p class="project-description">Designed and built a RESTful API serving over 50,000 requests per day. Includes JWT authentication, rate limiting, and auto-generated Swagger docs. Deployed on AWS with zero-downtime blue-green deployments.</p>
                             <a href="#" class="project-link">View project <i class="fas fa-arrow-right"></i></a>
                         </article>
-
                         <footer class="Slide-Footer">
                             <p class="Slide-Stack">Stack</p>
                             <ul class="Slide-Chips">
@@ -219,16 +204,14 @@
                     <li class="Slide">
                         <figure class="Slide-Image">
                             <figcaption class="slide-number-badge">03 / 03</figcaption>
-                             <figure class="img-placeholder">&#9635;</figure>
+                            <figure class="img-placeholder">&#9635;</figure>
                         </figure>
-
                         <article class="Slide-Content">
                             <mark class="project-tag">Data & ML</mark>
                             <h3 class="project-title">Project Three</h3>
                             <p class="project-description">A machine learning pipeline that analyses sentiment from social data in real time. Trained a custom NLP model achieving 91% accuracy on the test set. Integrated into a live dashboard with D3.js visualisations.</p>
                             <a href="#" class="project-link">View project <i class="fas fa-arrow-right"></i></a>
                         </article>
-
                         <footer class="Slide-Footer">
                             <p class="Slide-Stack">Stack</p>
                             <ul class="Slide-Chips">
@@ -248,35 +231,28 @@
                         <li><button class="Dot" data-index="1"></button></li>
                         <li><button class="Dot" data-index="2"></button></li>
                     </ul>
-
                     <nav class="Nav-Buttons">
                         <button class="Nav-Btn" id="PrevBtn"><i class="fas fa-arrow-left"></i></button>
                         <button class="Nav-Btn" id="NextBtn"><i class="fas fa-arrow-right"></i></button>
                     </nav>
                 </nav>
-
             </section>
         </section>
 
-
         <!-- CONTACT -->
-
         <section id="Contact">
-
             <section id="Contact-Title">
-                    <h2>Contact Me</h2>
+                <h2>Contact Me</h2>
             </section>
 
             <section id="Contact-Content">
-
                 <section id="Contact-Info">
                     <p>Feel free to reach out for collaborations or just a friendly chat!</p>
-                    <br>
                     <p><i class="fa-solid fa-map-pin"></i> Johannesburg, South Africa</p>
                     <ul>
-                        <li><a href="tel:+27648351320"><i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i></a></li>
-                        <li><a href="mailto:tloukgatla199@gmail.com"><i class="fa-regular fa-envelope" style="color: rgb(255, 255, 255);"></i></i></a> </li>
-                        <li><a href="https://github.com/Blessing-Kgatla"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i></a></li>  
+                        <li><a href="tel:+27648351320"><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href="mailto:tloukgatla199@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://github.com/Blessing-Kgatla"><i class="fa-brands fa-github"></i></a></li>
                     </ul>
                 </section>
 
@@ -286,7 +262,6 @@
                         <input type="email" placeholder="Your Email" required>
                         <input type="text" placeholder="Subject" required>
                         <textarea placeholder="Message" rows="5" required></textarea>
-
                         <button type="submit">
                             <i class="fa fa-paper-plane"></i> Send Message
                         </button>
@@ -295,17 +270,12 @@
             </section>
         </section>
 
-</main>
-
-
+    </main>
 
     <!-- FOOTER -->
-
     <footer>
-
-        <!-- BRAND -->
         <section id="Footer-Brand">
-            <img src="img/sparkles.png" id="Footer-Logo" >
+            <img src="img/sparkles.png" id="Footer-Logo">
             <p>Building ideas from skeleton to software.</p>
         </section>
 
@@ -331,22 +301,18 @@
         <section class="Footer-Projects">
             <h3>Machine Learning</h3>
             <section>
-                <a href="#">Large Langauge Model</a>
+                <a href="#">Large Language Model</a>
                 <a href="#">Prediction</a>
                 <a href="#">Detection</a>
             </section>
         </section>
 
-        <!-- COPYRIGHT -->
         <section id="Footer-Bottom">
-            <p>&copy; 2026 Blessings — Skeleton to Software Design</p>
+            <p>&copy; 2026 Blessing — Skeleton to Software Design</p>
         </section>
-
     </footer>
     
-<!--  LINK TO JAVASCRIPT -->
-<script src="script.js"></script>
-<script src="./features/slider.js"></script>
-
+    <script src="script.js"></script>
+    <script src="./features/slider.js"></script>
 </body>
 </html>
