@@ -248,17 +248,74 @@
     transform: scale(1.1);
 }
 /* ===== Skills ===== */
-    .Skills{
+    #Skills{
         background-color: #0f172a;
         color: #B8C5E5;
+        padding: 0px 60px 100px 60px;
+        
+        padding: 2rem;
+        
+    #Skills-Title{
+        
+        text-transform: uppercase;
     }
-    .Skills-Container{
-        display: flex;
-        justify-content: row;
-        font-size: 18px;
+    }
+    #Skills-Container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
   
     }
 
+    .Skills-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2.5rem;
+    }
+     .Skill-Card {
+    background-color: #10141d;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .Skill-Card header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .Skill-Card .card-icon {
+    font-size: 1.5rem;
+    color: #7DF9C2;
+  }
+
+  .Skill-Card h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .Skill-Card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .Skill-Card li::before {
+    content: '•';
+    color: #5B8EF0;
+    margin-right: 0.5rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    #Skills-Container {
+      grid-template-columns: 1fr;
+    }
+
+  }
 
 /* ===== Projects ===== */
 
