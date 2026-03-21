@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,6 +32,8 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
             </ul>
         </nav>
     </header>
@@ -37,7 +41,7 @@
     <!-- MAIN CONTENT-->
     <main>
 
-        <!-- HOME -->
+       <!-- HOME -->
         <section id="Home">
             <section id="Home-Content">
                 <section id="Home-Intro">
@@ -49,19 +53,22 @@
                         <button id="Reach" onclick="window.location.href='#Contact'">Contact Me</button>
                     </section>
                 </section>
+
                 <section id="Home-Image">
-                    <figure>
-                        <img src="img/giphy.gif" alt="Blessing">
-                    </figure>
+                    <figure><img src="img/giphy.gif" alt="Blessing" class="Avatar"></figure>
+                    <article id="Home-Badge">
+                        <span>Currently</span>
+                        <strong>2nd Year @ Wits</strong>
+                    </article>
                 </section>
             </section>
         </section>
 
         <!-- ABOUT -->
+
         <section id="About">
-            <section id="About-Title">
-                <h2>About Me</h2>
-            </section>
+            <section id="About-Title"><h2>About Me</h2></section>
+            <article id="Line">The person<em>behind the code</em></article>
 
             <section id="About-Content">
                 <section id="About-Intro">
@@ -97,9 +104,57 @@
             </section>
         </section>
 
+
+        <!-- Education -->
+
+        <section id="Education">
+            <h1 id="Education-Title">Education</h2>
+            <article id="Line">My Acadamic<em>History</em></article>
+
+            <section id="Edu-Container">
+
+                <section id="Edu-Card">
+                    <article id="Edu-Card-Icon"><i class="fas fa-graduation-cap"></i></article>
+                    <section id="Edu-Card-Info">
+                        <h2>BSc Computer Science</h2>
+                        <p id="Meta"><i class="fas fa-map-marker-alt"></i> University of the Witwatersrand &nbsp; | &nbsp; <i class="fas fa-calendar-alt"></i> 2024 — 2027</p>
+                    </section>
+                </section> 
+                
+                <section id="Edu-Timeline">
+
+                    <article class="Timeline-Item">
+                        <span class="Year">2024</span>
+                        <h3>First Year</h3>
+                        <p>Foundation in programming, mathematics, and computer fundamentals</p>
+                    </article>
+
+                    <article class="Timeline-Item">
+                        <span class="Year">2025</span>
+                        <h3>Second Year</h3>
+                        <p>Data structures, algorithms, software engineering principles</p>
+                    </article>
+
+                    <article class="Timeline-Item">
+                        <span class="Year">2026</span>
+                        <h3>Third Year</h3>
+                        <p>Advanced topics, specialisation electives, and capstone project</p>
+                    </article>
+
+                    <article class="Timeline-Item">
+                        <span class="Year">2027</span>
+                        <h3>Graduation</h3>
+                        <p>BSc Computer Science — University of the Witwatersrand</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+
         <!-- SKILLS -->
+
         <section id="Skills">
-            <h2 id="Skills-Title">My Skills</h2>
+            <h2 id="Skills-Title">Skills</h2>
+            <article id="Line">Tools of<em>the trade</em></article>
             <section class="Skills-Container">
 
                 <section class="Skill-Card">
@@ -146,10 +201,10 @@
         </section>
 
         <!-- PROJECTS -->
+
         <section id="Projects">
-            <section id="Projects-Title">
-                <h2>Projects</h2>
-            </section>
+            <section id="Projects-Title"><h2>Projects</h2></section>
+            <article id="Line">selected<em>work</em></article>
 
             <section id="Slide-Wrapper">
                 <ol id="Slide-Track">
@@ -240,15 +295,15 @@
         </section>
 
         <!-- CONTACT -->
+
         <section id="Contact">
-            <section id="Contact-Title">
-                <h2>Contact Me</h2>
-            </section>
+            <section id="Contact-Title"><h2>Contact Me</h2></section>
+            <article id="Line">Let's build<em>something</em></article>
 
             <section id="Contact-Content">
                 <section id="Contact-Info">
                     <p>Feel free to reach out for collaborations or just a friendly chat!</p>
-                    <p><i class="fa-solid fa-map-pin"></i> Johannesburg, South Africa</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
                     <ul>
                         <li><a href="tel:+27648351320"><i class="fa-solid fa-phone"></i></a></li>
                         <li><a href="mailto:tloukgatla199@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
@@ -258,8 +313,10 @@
 
                 <section id="Contact-Form">
                     <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
+                        <section id="Form-Row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required> 
+                        </section>
                         <input type="text" placeholder="Subject" required>
                         <textarea placeholder="Message" rows="5" required></textarea>
                         <button type="submit">
@@ -273,6 +330,7 @@
     </main>
 
     <!-- FOOTER -->
+
     <footer>
         <section id="Footer-Brand">
             <img src="img/sparkles.png" id="Footer-Logo">
