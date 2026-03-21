@@ -305,7 +305,101 @@ nav a:hover {
 }
 
 
+/* ====== EDUCATION ======= */
+
+#Education {
+  padding: 100px 60px;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border);
+}
+
+#Education-Title {
+    font-family: var(--font-display);
+    color: var(--text-primary);
+    display: inline-block;
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    margin-bottom: 2.5rem;
+    border-bottom: 4px solid var(--accent);
+    padding-bottom: 8px;
+}
+
+#Edu-Card{
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background: #111c3a;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+#Edu-Card #Edu-Card-Icon{
+  font-size: 28px;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+#Meta {
+  color:#94a3b8;
+  font-size: 14px;
+}
+
+#Edu-Timeline {
+  Position:relative;
+  padding-left: 40px;
+}
+
+#Edu-Timeline::before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #1e293b;
+}
+
+.Timeline-Item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.Timeline-Item::before {
+  content: "";
+  position: absolute;
+  left: -34px;   /* was -30px */
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #38bdf8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+.Year {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.Timeline-Item h3 {
+  margin: 5px 0;
+}
+
+.Timeline-Item p {
+  color: #94a3b8;
+}
+
+
+
+
 /* ===== SKILLS ===== */
+
 #Skills {
     padding: 100px 60px;
     background-color: var(--bg-primary);
@@ -710,7 +804,8 @@ nav a:hover {
 
 #Contact-Form input,
 #Contact-Form textarea {
-    width:800px;
+    max-width: 650px;
+    min-width: 300px;
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 13px 16px;
