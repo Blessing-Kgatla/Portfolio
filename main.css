@@ -121,6 +121,51 @@ nav a:hover {
     transform: translateY(-1px);
 }
 
+#menuToggle {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+#menuToggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 40px;
+            height: 40px;
+            background: none;
+            border: 1.5px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 0;
+            transition: border-color 0.2s, background 0.2s;
+            flex-shrink: 0;
+        }
+ 
+        #menuToggle:hover {
+            border-color: var(--accent);
+            background: rgba(26, 107, 255, 0.15);;
+        }
+ 
+        .line {
+            display: block;
+            width: 18px;
+            height: 1.5px;
+            background: white;
+            border-radius: 2px;
+            transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), opacity 0.2s ease;
+        }
+ 
+        #menuToggle.open { border-color: var(--accent); background: var(--accent-glow); }
+        #menuToggle.open .l1 { transform: translateY(6.5px) rotate(45deg); background: var(--accent); }
+        #menuToggle.open .l2 { opacity: 0; transform: scaleX(0); }
+        #menuToggle.open .l3 { transform: translateY(-6.5px) rotate(-45deg); background: var(--accent); }
+
 
 /* ===== HOME ===== */
 #Home {
@@ -1122,6 +1167,33 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 768px) {
+
+    #menuToggle {
+        display: flex;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 15px;
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+} 
 
 @media (max-width: 600px) {
     header {
